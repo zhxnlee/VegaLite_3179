@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Cardiovascular Disease Cases (2019)",
+    "width": 800,
+    "height": 400,
+    "projection": {"type": "equalEarth"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT3179/main/VegaLite/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+      "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+    },
+    
+    "transform": [
+      
+     
+      {
+        "lookup": "properties.NAME",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/zhxnlee/VegaLite_3179/main/cause_of_deaths_updated.csv"
+          },
+          "key": "Country/Territory",
+          "fields": ["Cardiovascular Diseases"]
+        }
+      },
+      {"calculate": "datum['Cardiovascular Diseases'] + 0.1", "as": "Cardiovascular Diseases"}
+    ],
+  
+    "mark": {"type": "geoshape"},
+    "encoding": {
+      "color": {
+        "field": "Cardiovascular Diseases",
+        "type": "quantitative",
+        "scale": {
+  "type": "threshold",
+  "domain": [10000, 100000, 1000000, 5000000],
+  "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603","#5b1e02"]
+  }
+  
+      },
+      "tooltip": [
+        {"field": "properties.NAME", "type": "nominal", "title": "Countries"},
+        {"field": "Cardiovascular Diseases", "type": "quantitative"}
+      ]
+    }
+  }
