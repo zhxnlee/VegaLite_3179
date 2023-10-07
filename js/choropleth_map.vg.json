@@ -4,6 +4,30 @@
   "width": 800,
   "height": 400,
   "projection": {"type": "equalEarth"},
+  "params":[{
+    "name": "YearSelection",
+    "value":1990,
+    "bind":{
+      "input": "range",
+      "min": 1990,
+      "max": 2019,
+      "step":1,
+      "name": "YearSelection"
+    }
+    
+  },
+  {
+    "name": "CardioSelection",
+    "value":0,
+    "bind":{
+      "input": "range",
+      "min": 0,
+      "max": 10000000,
+      "step":1000,
+      "name": "CardioSelection"
+    }
+    
+  }],
   "layer":[{
       "data": {
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
@@ -36,7 +60,8 @@
     "calculate": "datum['Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)'] + 0.1",
     "as": "Cardiovascular Diseases"
         },
-    {"filter": {"field": "Year", "equal": "2015"}}
+    {"filter"  :  "YearSelection == null || datum.Year ==  YearSelection" },
+    {"filter"  :  "datum['Cardiovascular Diseases'] >CardioSelection" }
   ],
   "mark": {"type": "geoshape"},
   "encoding": {
@@ -51,7 +76,7 @@
           }
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Entity", "type": "nominal", "title": "Entity"},
       {"field": "Cardiovascular Diseases", "type": "quantitative"}
     ]
   }}
