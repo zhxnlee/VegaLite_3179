@@ -1,84 +1,91 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Cardiovascular Diseases Deaths",
+  "title": "World Percentage of Cancer",
   "width": 800,
   "height": 400,
   "projection": {"type": "equalEarth"},
-  "params":[{
-    "name": "YearSelection",
-    "value":1990,
-    "bind":{
-      "input": "range",
-      "min": 1990,
-      "max": 2019,
-      "step":1,
-      "name": "YearSelection"
+  "params": [
+    {
+      "name": "YearSelection",
+      "value": 1990,
+      "bind": {
+        "input": "range",
+        "min": 1990,
+        "max": 2019,
+        "step": 1,
+        "name": "YearSelection"
+      }
+    },
+    {
+      "name": "CancerPercentage",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "name": "CardioSelection"
+      }
     }
-    
-  },
-  {
-    "name": "CardioSelection",
-    "value":0,
-    "bind":{
-      "input": "range",
-      "min": 0,
-      "max": 10000000,
-      "step":1000,
-      "name": "CardioSelection"
-    }
-    
-  }],
-  "layer":[{
+  ],
+  "layer": [
+    {
       "data": {
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
       "mark": {"type": "geoshape", "fill": "skyblue"}
-    },{
+    },
+    {
       "data": {
         "url": "https://raw.githubusercontent.com/zhxnlee/VegaLite_3179/main/ne_110m.json",
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     },
-  {"data": {
-    "url": "https://raw.githubusercontent.com/zhxnlee/VegaLite_3179/main/annual-number-of-deaths-by-cause.csv"
-  },
-  "transform": [
     {
-      "lookup": "Entity",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
-          "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-        },
-        "key": "properties.NAME"
+      "data": {
+        "url": "https://raw.githubusercontent.com/zhxnlee/VegaLite_3179/main/Cancer/share-of-population-with-cancer.csv"
       },
-      "as": "geo"
-    },
-    {
-    "calculate": "datum['Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)'] + 0.1",
-    "as": "Cardiovascular Diseases"
+      "transform": [
+        {
+          "lookup": "Entity",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+              "format": {
+                "type": "topojson",
+                "feature": "ne_110m_admin_0_countries"
+              }
+            },
+            "key": "properties.NAME"
+          },
+          "as": "geo"
         },
-    {"filter"  :  "YearSelection == null || datum.Year ==  YearSelection" },
-    {"filter"  :  "datum['Cardiovascular Diseases'] >CardioSelection" }
-  ],
-  "mark": {"type": "geoshape"},
-  "encoding": {
-    "shape": {"field": "geo", "type": "geojson"},
-    "color": {
-      "field": "Cardiovascular Diseases",
-      "type": "quantitative",
-      "scale": {
+        {
+          "calculate": "datum['Current number of cases of neoplasms per 100 people, in both sexes aged age-standardized']",
+          "as": "Cancer"
+        },
+        {"filter": "YearSelection == null || datum.Year ==  YearSelection"},
+        {"filter": "datum['Cancer'] > CancerPercentage"}
+      ],
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "Cancer",
+          "type": "quantitative",
+          "scale": {
             "type": "threshold",
-            "domain": [10000, 100000, 1000000, 5000000],
+            "domain": [2,4,6,8,10],
             "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603", "#5b1e02"]
           }
-    },
-    "tooltip": [
-      {"field": "Entity", "type": "nominal", "title": "Entity"},
-      {"field": "Cardiovascular Diseases", "type": "quantitative"}
-    ]
-  }}
+        },
+        "tooltip": [
+          {"field": "Entity", "type": "nominal", "title": "Entity"},
+          {"field": "Cancer", "type": "quantitative"}
+        ]
+      }
+    }
   ]
 }
