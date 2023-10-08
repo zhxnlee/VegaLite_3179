@@ -1,4 +1,4 @@
-Entity,Code,Year,Deaths - Neoplasms - Sex: Both - Age: 70+ years (Rate),Deaths - Neoplasms - Sex: Both - Age: 50-69 years (Rate),Deaths - Neoplasms - Sex: Both - Age: 15-49 years (Rate),Deaths - Neoplasms - Sex: Both - Age: 5-14 years (Rate),Deaths - Neoplasms - Sex: Both - Age: Under 5 (Rate),Deaths - Neoplasms - Sex: Both - Age: Age-standardized (Rate),Deaths - Neoplasms - Sex: Both - Age: All Ages (Rate)
+Entity,Code,Year,70+ years,50-69 years,15-49 years,5-14 years,Under 5,Age-standardized,All Ages
 Afghanistan,AFG,1990,1021.49,407.23,43.62,9.37,21.33,159.96,101.41
 Afghanistan,AFG,1991,1013.76,404.51,40.53,9.46,18.7,158.46,93.71
 Afghanistan,AFG,1992,1007.83,402.69,37.17,9.74,16.8,157.39,84.01
