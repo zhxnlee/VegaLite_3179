@@ -1,0 +1,92 @@
+{
+  "title": "Cardiovascular Diseases deaths across ",  
+  "width": 800,
+    "height": 300,
+    "params": [
+      {
+      "name": "YearSelection",
+      "value":1990,
+      "bind":{
+        "input": "range",
+        "min": 1990,
+        "max": 2019,
+        "step":1,
+        "name": "YearSelection"
+      }
+      
+    }
+    ],
+    "data": {
+      "url": "https://raw.githubusercontent.com/zhxnlee/VegaLite_3179/main/annual-number-of-deaths-by-cause.csv"
+    },
+    "mark": {
+      "type": "bar"
+    },
+    "transform": [
+      {
+        "filter": "datum.Year == YearSelection"
+      },
+      {
+        "calculate": "datum['Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)']",
+        "as": "Cardiovascular Diseases"
+      },
+      {
+        "aggregate": [
+          {
+            "op": "sum",
+            "field": "Cardiovascular Diseases",
+            "as": "TotalCardiovascularDeaths"
+          }
+        ],
+        "groupby": ["Continents"]
+      }
+    ],
+    "encoding": {
+      "y": {
+        "field": "Continents",
+        "type": "nominal",
+        "title": "Continent"
+      },
+      "x": {
+        "field": "TotalCardiovascularDeaths",
+        "type": "quantitative",
+        "title": "Total Cardiovascular Diseases Deaths",
+        "scale": {"domain": [0, 56000000]}
+      },
+      "color": {
+        "field": "Continents",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "range": [
+            "#e41a1c",
+            "#984ea3",
+            "#ff7f00",
+            "#a6cee3",
+            "#377eb8",
+            "#a65628"
+          ]
+        }
+      },
+      "tooltip": [
+        {
+          "field": "Continents",
+          "type": "nominal",
+          "title": "Continent"
+        },
+        {
+          "field": "TotalCardiovascularDeaths",
+          "type": "quantitative",
+          "title": "Total Cardiovascular Diseases Deaths"
+        }
+      ]
+    }
+  }
+  
