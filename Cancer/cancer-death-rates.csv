@@ -1439,36 +1439,36 @@ Czechia,Europe,CZE,2016,147.8
 Czechia,Europe,CZE,2017,146.43
 Czechia,Europe,CZE,2018,147.22
 Czechia,Europe,CZE,2019,145.92
-Democratic Republic of Congo,Africa,COD,1990,116.59
-Democratic Republic of Congo,Africa,COD,1991,116.61
-Democratic Republic of Congo,Africa,COD,1992,115.77
-Democratic Republic of Congo,Africa,COD,1993,114.07
-Democratic Republic of Congo,Africa,COD,1994,112.85
-Democratic Republic of Congo,Africa,COD,1995,112.62
-Democratic Republic of Congo,Africa,COD,1996,113.29
-Democratic Republic of Congo,Africa,COD,1997,110.07
-Democratic Republic of Congo,Africa,COD,1998,109.27
-Democratic Republic of Congo,Africa,COD,1999,108.32
-Democratic Republic of Congo,Africa,COD,2000,107.5
-Democratic Republic of Congo,Africa,COD,2001,106.41
-Democratic Republic of Congo,Africa,COD,2002,104.86
-Democratic Republic of Congo,Africa,COD,2003,105.21
-Democratic Republic of Congo,Africa,COD,2004,104.13
-Democratic Republic of Congo,Africa,COD,2005,102.77
-Democratic Republic of Congo,Africa,COD,2006,101.92
-Democratic Republic of Congo,Africa,COD,2007,100.71
-Democratic Republic of Congo,Africa,COD,2008,100.65
-Democratic Republic of Congo,Africa,COD,2009,100.3
-Democratic Republic of Congo,Africa,COD,2010,100.18
-Democratic Republic of Congo,Africa,COD,2011,100.8
-Democratic Republic of Congo,Africa,COD,2012,101.3
-Democratic Republic of Congo,Africa,COD,2013,101.63
-Democratic Republic of Congo,Africa,COD,2014,101.72
-Democratic Republic of Congo,Africa,COD,2015,101.45
-Democratic Republic of Congo,Africa,COD,2016,101.2
-Democratic Republic of Congo,Africa,COD,2017,101.53
-Democratic Republic of Congo,Africa,COD,2018,102.74
-Democratic Republic of Congo,Africa,COD,2019,103.1
+Dem. Rep. Congo,Africa,COD,1990,116.59
+Dem. Rep. Congo,Africa,COD,1991,116.61
+Dem. Rep. Congo,Africa,COD,1992,115.77
+Dem. Rep. Congo,Africa,COD,1993,114.07
+Dem. Rep. Congo,Africa,COD,1994,112.85
+Dem. Rep. Congo,Africa,COD,1995,112.62
+Dem. Rep. Congo,Africa,COD,1996,113.29
+Dem. Rep. Congo,Africa,COD,1997,110.07
+Dem. Rep. Congo,Africa,COD,1998,109.27
+Dem. Rep. Congo,Africa,COD,1999,108.32
+Dem. Rep. Congo,Africa,COD,2000,107.5
+Dem. Rep. Congo,Africa,COD,2001,106.41
+Dem. Rep. Congo,Africa,COD,2002,104.86
+Dem. Rep. Congo,Africa,COD,2003,105.21
+Dem. Rep. Congo,Africa,COD,2004,104.13
+Dem. Rep. Congo,Africa,COD,2005,102.77
+Dem. Rep. Congo,Africa,COD,2006,101.92
+Dem. Rep. Congo,Africa,COD,2007,100.71
+Dem. Rep. Congo,Africa,COD,2008,100.65
+Dem. Rep. Congo,Africa,COD,2009,100.3
+Dem. Rep. Congo,Africa,COD,2010,100.18
+Dem. Rep. Congo,Africa,COD,2011,100.8
+Dem. Rep. Congo,Africa,COD,2012,101.3
+Dem. Rep. Congo,Africa,COD,2013,101.63
+Dem. Rep. Congo,Africa,COD,2014,101.72
+Dem. Rep. Congo,Africa,COD,2015,101.45
+Dem. Rep. Congo,Africa,COD,2016,101.2
+Dem. Rep. Congo,Africa,COD,2017,101.53
+Dem. Rep. Congo,Africa,COD,2018,102.74
+Dem. Rep. Congo,Africa,COD,2019,103.1
 Denmark,Europe,DNK,1990,189.68
 Denmark,Europe,DNK,1991,189.04
 Denmark,Europe,DNK,1992,190.73
@@ -5879,66 +5879,36 @@ United Kingdom,Europe,GBR,2016,150.39
 United Kingdom,Europe,GBR,2017,149.41
 United Kingdom,Europe,GBR,2018,150.81
 United Kingdom,Europe,GBR,2019,150.91
-United States,North America,USA,1990,168.98
-United States,North America,USA,1991,167.9
-United States,North America,USA,1992,166.9
-United States,North America,USA,1993,168.43
-United States,North America,USA,1994,168.16
-United States,North America,USA,1995,168.02
-United States,North America,USA,1996,165.7
-United States,North America,USA,1997,163.2
-United States,North America,USA,1998,161.84
-United States,North America,USA,1999,161.72
-United States,North America,USA,2000,160.38
-United States,North America,USA,2001,158.95
-United States,North America,USA,2002,157.57
-United States,North America,USA,2003,155.18
-United States,North America,USA,2004,151.64
-United States,North America,USA,2005,150.18
-United States,North America,USA,2006,148.41
-United States,North America,USA,2007,146.5
-United States,North America,USA,2008,145.71
-United States,North America,USA,2009,144.25
-United States,North America,USA,2010,141.68
-United States,North America,USA,2011,140.97
-United States,North America,USA,2012,139.54
-United States,North America,USA,2013,138.23
-United States,North America,USA,2014,137.31
-United States,North America,USA,2015,136.43
-United States,North America,USA,2016,136.36
-United States,North America,USA,2017,135.26
-United States,North America,USA,2018,136.38
-United States,North America,USA,2019,137.37
-United States Virgin Islands,North America,VIR,1990,157.72
-United States Virgin Islands,North America,VIR,1991,157.24
-United States Virgin Islands,North America,VIR,1992,158.1
-United States Virgin Islands,North America,VIR,1993,159.71
-United States Virgin Islands,North America,VIR,1994,162.17
-United States Virgin Islands,North America,VIR,1995,159.96
-United States Virgin Islands,North America,VIR,1996,160.54
-United States Virgin Islands,North America,VIR,1997,159.68
-United States Virgin Islands,North America,VIR,1998,159.45
-United States Virgin Islands,North America,VIR,1999,161.82
-United States Virgin Islands,North America,VIR,2000,162.65
-United States Virgin Islands,North America,VIR,2001,163.4
-United States Virgin Islands,North America,VIR,2002,163.53
-United States Virgin Islands,North America,VIR,2003,163.41
-United States Virgin Islands,North America,VIR,2004,163.91
-United States Virgin Islands,North America,VIR,2005,164.12
-United States Virgin Islands,North America,VIR,2006,167.92
-United States Virgin Islands,North America,VIR,2007,189.45
-United States Virgin Islands,North America,VIR,2008,190.95
-United States Virgin Islands,North America,VIR,2009,192.07
-United States Virgin Islands,North America,VIR,2010,193.29
-United States Virgin Islands,North America,VIR,2011,193.32
-United States Virgin Islands,North America,VIR,2012,193.42
-United States Virgin Islands,North America,VIR,2013,192.56
-United States Virgin Islands,North America,VIR,2014,191.55
-United States Virgin Islands,North America,VIR,2015,191.13
-United States Virgin Islands,North America,VIR,2016,188.31
-United States Virgin Islands,North America,VIR,2017,187.01
-United States Virgin Islands,North America,VIR,2018,185.68
-United States Virgin Islands,North America,VIR,2019,184.32
+United States of America,North America,USA,1990,168.98
+United States of America,North America,USA,1991,167.9
+United States of America,North America,USA,1992,166.9
+United States of America,North America,USA,1993,168.43
+United States of America,North America,USA,1994,168.16
+United States of America,North America,USA,1995,168.02
+United States of America,North America,USA,1996,165.7
+United States of America,North America,USA,1997,163.2
+United States of America,North America,USA,1998,161.84
+United States of America,North America,USA,1999,161.72
+United States of America,North America,USA,2000,160.38
+United States of America,North America,USA,2001,158.95
+United States of America,North America,USA,2002,157.57
+United States of America,North America,USA,2003,155.18
+United States of America,North America,USA,2004,151.64
+United States of America,North America,USA,2005,150.18
+United States of America,North America,USA,2006,148.41
+United States of America,North America,USA,2007,146.5
+United States of America,North America,USA,2008,145.71
+United States of America,North America,USA,2009,144.25
+United States of America,North America,USA,2010,141.68
+United States of America,North America,USA,2011,140.97
+United States of America,North America,USA,2012,139.54
+United States of America,North America,USA,2013,138.23
+United States of America,North America,USA,2014,137.31
+United States of America,North America,USA,2015,136.43
+United States of America,North America,USA,2016,136.36
+United States of America,North America,USA,2017,135.26
+United States of America,North America,USA,2018,136.38
+United States of America,North America,USA,2019,137.37
 Uruguay,South America,URY,1990,214.64
 Uruguay,South America,URY,1991,216.64
 Uruguay,South America,URY,1992,213.84
