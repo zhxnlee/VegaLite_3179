@@ -32,14 +32,22 @@
       "bind":{
         "input": "select",
         "options": [
-          "null", 
+          null, 
           "North America",
           "South America",
           "Europe",
           "Africa",
           "Asia",
           "Oceania"        
-          ],
+          ],"labels":[
+            "All Continents", 
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania" 
+            ],
           "name": "Continent"
       }
     }
