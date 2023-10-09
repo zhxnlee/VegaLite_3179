@@ -26,6 +26,22 @@
         "step": 1,
         "name": "Global Percentage"
       }
+    },
+    {
+      "name": "Continent_Selection",
+      "bind":{
+        "input": "select",
+        "options": [
+          "null", 
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"        
+          ],
+          "name": "Continent"
+      }
     }
   ],
   "layer": [
@@ -67,7 +83,8 @@
           "as": "Cancer"
         },
         {"filter": "YearSelection == null || datum.Year ==  YearSelection"},
-        {"filter": "datum['Cancer'] > CancerPercentage"}
+        {"filter": "datum['Cancer'] > CancerPercentage"},
+        {"filter": "Continent_Selection == null || datum.Continents == Continent_Selection" }
       ],
       "mark": {"type": "geoshape"},
       "encoding": {
