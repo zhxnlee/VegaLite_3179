@@ -8,14 +8,22 @@
   
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-
-
 </head>
 <body>
-  
+<h1>Global Cancer Analysis</h1>  
 <div id="choropleth_map"></div>
+<div class="map_text">
+<p>The choropleth map shows the share of population with cancer across the years. As we can see from the choropleth map, the northern part of the World map around Russia has a higher
+  percentage of cancer of over 10%. 
+</p>
+</div>
 <div id="barplot"></div>
-
+<div class="map_text">
+  <p>The barplot above shows the number of deaths that is caused by different types of cancer globally. 
+  </p>
+  </div>
+<div id="barplot2"></div> <!-- Corrected id -->
+ 
 <script type="text/javascript">
 
   var spec2 = "js/choropleth_map.vg.json";
@@ -23,10 +31,15 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var scatterPlotSpec = "js/barplot.vg.json"; // Update this to the correct path
-vegaEmbed('#barplot', scatterPlotSpec).then(function(result) {
-  // Access the Vega view instance for the scatter plot here
-}).catch(console.error);
+  var barplot = "js/cancertypedeaths.vg.json"; // Update this to the correct path
+  vegaEmbed('#barplot', barplot).then(function(result) {
+    // Access the Vega view instance for the scatter plot here
+  }).catch(console.error);
+
+  var barplot2 = "js/deathrateage.vg.json";
+  vegaEmbed('#barplot2', barplot2).then(function(result) { // Corrected id
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
 </script>
 
 </body>

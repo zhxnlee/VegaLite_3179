@@ -13,7 +13,7 @@
         "min": 1990,
         "max": 2019,
         "step": 1,
-        "name": "YearSelection"
+        "name": "Year"
       }
     },
     {
@@ -24,7 +24,7 @@
         "min": 0,
         "max": 10,
         "step": 1,
-        "name": "CardioSelection"
+        "name": "Global Percentage"
       }
     }
   ],
@@ -78,12 +78,12 @@
           "scale": {
             "type": "threshold",
             "domain": [2,4,6,8,10],
-            "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603", "#5b1e02"]
+            "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603", "#5b1e02","#000000"]
           }
         },
         "tooltip": [
           {"field": "Entity", "type": "nominal", "title": "Entity"},
-          {"field": "Cancer", "type": "quantitative"}
+          {"field": "Cancer", "type": "quantitative", "title": "Cancer Global Percentage(%)"}
         ]
       }
     }

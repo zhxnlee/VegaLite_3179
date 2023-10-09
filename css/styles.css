@@ -3,14 +3,33 @@
 	bottom: 100px; 
 	left: 200px;
 	right: 100px;
+	display:inline-block
 	/*height: 1000px;
 	width: 800px;*/
+
 }
 #barplot {
-	top:200px;
+	top:100px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
 	/*height: 1000px;
 	width: 800px;*/
 }
+
+#barplot2 {
+	top:300px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+.map_text {
+	
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	padding-top: 100px;
+	
+  }

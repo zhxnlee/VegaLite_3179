@@ -64,7 +64,11 @@
       "type": "quantitative",
       "title": "Total Number of Deaths"
 
-    }
+    },
+    "tooltip": [
+    {"field": "Cancer Type", "type": "nominal", "title": "Cancer Type"},
+    {"field": "Number of Deaths", "type": "quantitative"}
+  ]
   },
   "width": 800,
   "height": 400
