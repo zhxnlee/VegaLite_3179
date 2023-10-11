@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Death Rates from Cancer",
+    "title": "Death Rates from Smoking",
     "width": 600,
     "height": 400,
     "projection": {"type": "equalEarth"},
@@ -104,7 +104,7 @@
             "scale": {
               "type": "threshold",
               "domain": [50,100,150,200,250],
-              "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603", "#5b1e02","#000000"]
+              "range": ["#fedc97", "#b5b682", "#7c9885", "#28666e", "#033f63","#000000"]
             }
           },
           "tooltip": [
