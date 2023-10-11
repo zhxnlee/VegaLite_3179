@@ -1,5 +1,6 @@
 {
     "data": {"url": "https://raw.githubusercontent.com/zhxnlee/VegaLite_3179/main/Cancer/total-cancer-deaths-by-type.csv"},
+    "title": "Trend of Cancer Deaths throughout the years",
      "params": [
       {
         "name": "Continent_Selection",
@@ -43,5 +44,6 @@
       "x": {"field": "Year", "type": "temporal"},
       "y": {"field": "Number of Deaths", "type": "quantitative", "aggregate": "sum"},
       "color": {"field": "Cancer Type", "type": "nominal"}
-    }
+    },
+    "height": 400
   }

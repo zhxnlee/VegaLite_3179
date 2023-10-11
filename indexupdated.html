@@ -13,10 +13,12 @@
     <div class="title">
       <h1>Cancer</h1>
     </div>
-    <div class="cancerpercentagecontainer">
-      <div id="cancerpercentagemap"></div>
+    
 
-      <div class="cancerpercentagetext">
+    <div class="causeofdeathscontainer">
+      <div id="causeofdeaths"></div>
+
+      <div class="causeofdeathstext">
         <h1>Lorem ipsum dolor</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, s ed do
@@ -32,30 +34,13 @@
 
   
   
-    <div class="deathratecontainer">
-      
-        <div id="deathrateage"></div>
-        <div id="deathratemap"></div>
-      
-        <div class="deathratetext">
-          <h1>Lorem ipsum dolor</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, s ed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
+  
 
     
 
     <script type="text/javascript">
-      var cancerpercentagemap = "js/cancerpercentagemap.vg.json";
-      vegaEmbed("#cancerpercentagemap", cancerpercentagemap)
+      var causeofdeathsmap = "js/causeofdeathsmap.vg.json";
+      vegaEmbed("#causeofdeathsmap", causeofdeathsmap)
         .then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         })
@@ -83,6 +68,14 @@
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         })
         .catch(console.error);
-    </script>
+
+      var causeofdeaths = "js/causeofdeaths.vg.json";
+      vegaEmbed("#causeofdeaths", causeofdeaths)
+        .then(function (result) {
+          // Corrected id
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        })
+        .catch(console.error);
+  </script>
   </body>
 </html>
