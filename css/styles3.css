@@ -1,0 +1,72 @@
+.title{
+    padding-top: 50px;
+    padding-left: 100px;
+    font-family: Playfair Display,Georgia,Times New Roman,"Liberation Serif",serif;
+    position: relative;
+
+}
+
+
+#cancerpercentagemap{
+    position:absolute;
+    padding-left:100px;
+}
+
+
+.cancerpercentagetext{
+    width:50%;
+    float:right;
+    height: 550px;
+   
+}
+
+#deathrateage{
+    position:absolute;
+    padding-left:100px;
+   
+}
+
+.deathrateagetext{
+    width:50%;
+    float:right;
+    height: 550px;
+    padding-left:1px;
+    
+   
+   
+}
+
+
+.deathratecontainer{
+    padding-top:50px;
+}
+
+#deathratemap{
+
+    padding-left:800px;
+}
+
+
+.deathratetext h1{
+    text-align: center;
+    padding-top:100px;
+    
+}
+
+.deathratetext p{
+    text-align: center;
+    padding-bottom:100px;
+    
+}
+
+.deathratecontainer h1{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
