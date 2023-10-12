@@ -1,7 +1,8 @@
 {
     "data": {"url": "https://raw.githubusercontent.com/zhxnlee/VegaLite_3179/main/Cancer/total-cancer-deaths-by-type.csv"},
-    "title": "Trend of Cancer Deaths throughout the years",
-     "params": [
+    "title":  {"text":"Cancer Deaths throughout the Years", "fontSize": 20, "offset": 20,"subtitle":"Visualising the trend of each Cancer Type","subtitleColor": "grey","subtitlePadding":10},
+    "background":null, 
+    "params": [
       {
         "name": "Continent_Selection",
         "bind":{
@@ -23,7 +24,7 @@
               "Asia",
               "Oceania" 
               ],
-            "name": "Continent"
+            "name": "Continent   "
         }
       }],
      "transform": [
@@ -44,6 +45,8 @@
       "x": {"field": "Year", "type": "temporal"},
       "y": {"field": "Number of Deaths", "type": "quantitative", "aggregate": "sum"},
       "color": {"field": "Cancer Type", "type": "nominal"}
+      
     },
-    "height": 400
+
+    "height": 400, "width": 500
   }

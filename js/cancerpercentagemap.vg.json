@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "World Percentage of Cancer",
+  "title": {"text":"Prevalance of Cancer Globally", "fontSize": 20, "offset": 20,"subtitle":"Share of population(%) with Cancer","subtitleColor": "grey","subtitlePadding":10},
   "width": 500,
   "height": 300,
+  "background": null,
   "projection": {"type": "equalEarth"},
   "params": [
     {
@@ -13,7 +14,7 @@
         "min": 1990,
         "max": 2019,
         "step": 1,
-        "name": "Year"
+        "name": "Year  "
       }
     },
     {
@@ -24,7 +25,7 @@
         "min": 0,
         "max": 10,
         "step": 1,
-        "name": "Global Percentage"
+        "name": "Global Percentage  "
       }
     },
     {
@@ -48,7 +49,8 @@
             "Asia",
             "Oceania" 
             ],
-          "name": "Continent"
+            
+          "name": "Continent     "
       }
     }
   ],

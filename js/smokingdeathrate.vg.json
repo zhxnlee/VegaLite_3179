@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Death Rates from Smoking",
+    "title": {"text":"Death Rates from Smoking", "fontSize": 20, "offset": 20,"subtitle":"Smoking death rate per 100,000 people ","subtitleColor": "grey","subtitlePadding":10},
     "width": 600,
     "height": 400,
     "projection": {"type": "equalEarth"},
@@ -49,7 +49,7 @@
             "Asia",
             "Oceania" 
             ],
-            "name": "Continent"
+            "name": "Continent   "
         }
       }
     ],
